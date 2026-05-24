@@ -66,3 +66,19 @@ window.addEventListener('scroll', function() {
 backToTopButton.addEventListener('click', function() {
  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+const revealButton = document.getElementById('reveal-fact');
+
+const funFact = document.getElementById('fun-fact');
+
+revealButton.addEventListener('click', function() {
+
+ funFact.classList.toggle('show');
+
+ if (funFact.classList.contains('show')) {
+  revealButton.textContent = '😊 Hide Fun Fact';
+ } else {
+  revealButton.textContent = '🔍 Click to Reveal a Fun Fact About Me!';
+ }
+
+});
