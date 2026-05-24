@@ -11,9 +11,8 @@ toggleButton.addEventListener('click', function() {
 });
 
 const texts = [
- "Hi, I'm Tshiamo!",
- "I'm a Web Developer",
- "Welcome to Apple Essential!"
+ "Welcome to Apple Essential",
+ "Your one stop for everything Apple"
 ];
 
 let textIndex = 0;
@@ -45,7 +44,7 @@ function typeEffect() {
   textIndex = (textIndex + 1) % texts.length;
  }
 
- const speed = isDeleting ? 50 : 100;
+ const speed = isDeleting ? 30 : 100;
 
  setTimeout(typeEffect, speed);
 

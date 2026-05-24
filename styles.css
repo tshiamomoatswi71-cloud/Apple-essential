@@ -1,7 +1,7 @@
 body {
  font-family: Arial, sans-serif;
  color: #333;
- background-color: #f9f9f9;
+ background-color: #e9e1f48b;
  margin: 0;
  padding: 0;
  line-height: 1.6;
@@ -9,7 +9,7 @@ body {
 }
 
 header {
- background-color: #4CAF50;
+ background-color: #232523;
  color: white;
  padding: 20px;
  text-align: center;
@@ -57,7 +57,7 @@ p {
 }
 
 a {
- color: #4CAF50;
+ color: #2d2f2d;
  text-decoration: none;
 }
 
@@ -66,7 +66,6 @@ a:hover {
 }
 
 img {
- border: 5px solid #4CAF50;
  border-radius: 10px;
 }
 
@@ -150,7 +149,7 @@ body.dark-mode nav {
 }
 
 #reveal-fact:hover {
- background-color: #45a049;
+ background-color: #545c55;
 }
 
 .hidden-fact {
