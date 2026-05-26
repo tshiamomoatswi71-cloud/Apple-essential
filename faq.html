@@ -46,3 +46,54 @@
  </div>
  </div>
  </nav>
+
+
+ <style>
+.faq-box{max-width:800px;margin:20px auto;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.faq-item{background:#fff;border:1px solid #e5e5e5;border-radius:10px;margin-bottom:12px}
+.faq-q{padding:18px 20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:1.05rem}
+.faq-q:after{content:'+';font-size:1.5rem;line-height:1;transition:.3s}
+.faq-item.active .faq-q:after{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;padding:0 20px;color:#444;line-height:1.6}
+.faq-item.active .faq-a{max-height:300px;padding:0 20px 18px}
+.faq-a p{margin:0}
+</style>
+
+<div class="faq-box">
+    <div class="faq-item">
+        <div class="faq-q">How long does a shoe cleaning take?</div>
+        <div class="faq-a"><p>Basic wash: 24 hours. Deep clean: 2 days. Full restoration: 3-4 days. Same-day express service available for P20 extra.</p></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">How much does it cost?</div>
+        <div class="faq-a"><p>Basic Wash P50, Deep Clean P100, Restoration P150+. Pickup & delivery around Gaborone is P30, or free for 3+ pairs.</p></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">Do you fix apple products?</div>
+        <div class="faq-a"><p>Not at the moment.</p></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">Do you offer  delivery?</div>
+        <div class="faq-a"><p>Yes. We cover Gaborone including UB, Main Mall.</p></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">Do we order online</div>
+        <div class="faq-a"><p>No.</p></div>
+    </div>
+
+  
+</div>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q=>{
+    q.onclick=()=>{
+        const i=q.parentElement,o=i.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(x=>x.classList.remove('active'));
+        if(!o)i.classList.add('active');
+    };
+});
+</script>
